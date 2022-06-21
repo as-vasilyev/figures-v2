@@ -7,10 +7,9 @@ public class Main {
         String figure = scanner.next();
         switch (figure) {
             case "c" -> {
-                System.out.println("Enter radius");
-                int radius = scanner.nextInt();
-                Figure circle = new Circle(radius);
-                if (!circle.isValid()){
+                Figure circle = new Circle();
+                circle.getParameters();
+                if (!circle.isValid()) {
                     System.out.println("Circle with entered radius doesn't exist");
                     break;
                 }
@@ -18,14 +17,9 @@ public class Main {
                 circle.getPerimeter();
             }
             case "t" -> {
-                System.out.println("Enter first side");
-                int a = scanner.nextInt();
-                System.out.println("Enter second side");
-                int b = scanner.nextInt();
-                System.out.println("Enter third side");
-                int c = scanner.nextInt();
-                Figure triangle = new Triangle(a, b, c);
-                if (!triangle.isValid()){
+                Figure triangle = new Triangle();
+                triangle.getParameters();
+                if (!triangle.isValid()) {
                     System.out.println("Triangle with entered sides doesn't exist");
                     break;
                 }
@@ -33,12 +27,9 @@ public class Main {
                 triangle.getPerimeter();
             }
             case "r" -> {
-                System.out.println("Enter first side");
-                int height = scanner.nextInt();
-                System.out.println("Enter second side");
-                int width = scanner.nextInt();
-                Figure rectangle = new Rectangle(height, width);
-                if (!rectangle.isValid()){
+                Figure rectangle = new Rectangle();
+                rectangle.getParameters();
+                if (!rectangle.isValid()) {
                     System.out.println("Rectangle with entered sides doesn't exist");
                     break;
                 }
