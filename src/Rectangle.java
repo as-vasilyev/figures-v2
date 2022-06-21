@@ -7,7 +7,7 @@ public class Rectangle extends Figure {
     @Override
     public void getPerimeter() {
         perimeter = 2 * height + 2 * width;
-        System.out.printf("Rectangle perimeter is %d \n", perimeter);
+        System.out.printf("Rectangle perimeter is %f \n", perimeter);
     }
 
     @Override

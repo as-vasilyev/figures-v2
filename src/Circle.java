@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Circle extends Figure {
     int radius;
-    double perimeter;
 
     @Override
     public void getParameters() {

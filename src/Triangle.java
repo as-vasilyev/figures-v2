@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 public class Triangle extends Figure {
-    int a;
-    int b;
-    int c;
+    double a;
+    double b;
+    double c;
 
     @Override
     public void getPerimeter() {
-        perimeter = a + b + c;
-        System.out.printf("Triangle perimeter is %d \n", perimeter);
+        perimeter = (int)(a + b + c);
+        System.out.printf("Triangle perimeter is %f \n", perimeter);
     }
 
     @Override
@@ -32,8 +32,8 @@ public class Triangle extends Figure {
 
     @Override
     public void getArea() {
-        int s = (a + b + c) / 2;
-        area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+        double s = (a + b + c) / 2;
+        area = (int)(Math.sqrt(s * (s - a) * (s - b) * (s - c)));
         System.out.printf("Triangle area is %f \n", area);
     }
 }
